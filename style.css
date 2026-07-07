@@ -593,3 +593,29 @@ p {
     grid-template-columns: 34px 1fr;
   }
 }
+
+
+.facts div {
+  display: grid;
+  grid-template-columns: 50px minmax(0, 1fr);
+  column-gap: 18px;
+  align-items: center;
+}
+
+.facts .icon {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+}
+
+.facts span:not(.icon) {
+  grid-column: 2;
+  grid-row: 1;
+  margin-bottom: 2px;
+}
+
+.facts strong {
+  grid-column: 2;
+  grid-row: 2;
+  white-space: normal;
+  word-break: keep-all;
+}
